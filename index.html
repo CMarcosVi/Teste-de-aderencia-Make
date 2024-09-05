@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quizz simples desenvolvido como teste técnico para Make Vendas">
+    <meta name="keywords" content="HTML, CSS, JQuery, Bootstrap 5, Make Vendas">
+    <link rel="author" href="https://cmarcosvi.github.io/Portifolio/">
+    <title>Make Quizz</title>
+    <link rel="stylesheet" href="./lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center">
+    <!--header-->
+    <header class="d-flex title-quest-make align-items-end justify-content-center">
+        <h1 class="d-flex"><p>Teste</p>Dev Front-End</h1>
+    </header>
+    <!--header-->
+    <!--main quizz-->
+    <main class="d-flex flex-column align-items-center justify-content-center">
+        <section class="text-center area-quizz border border-0 rounded-3 ">
+            <div class="content">
+                <div class="d-flex align-items-center justify-content-start ">                
+                    <span class="d-flex align-items-center justify-content-center spnQtd"></span>
+                    <div class="question text-white m-lg-3 m-1"></div>
+                </div>
+
+                <div class="answers"></div>
+            </div>
+        
+            <div class="finish">
+                <span></span>
+                <button class="finish-button btn btn-secondary">Restart</button>
+            </div>
+        </section>
+        <section class="d-flex indice-quest align-items-center justify-content-start">
+            <div id="btn-prev">&larr;</div>
+            <div class="question-indicators ml-3"></div>
+        </section>
+    </main>
+    <!--main quizz-->
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+    <script src="./lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/imgs/background.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background: fixed ;
+}
+/*header*/
+header{
+    height:20vh;
+    width: 100%;
+    text-transform:uppercase ;
+}
+.title-quest-make{
+    font-size: 1.5rem;
+    color:#fff;
+}
+.title-quest-make p{
+    font-weight: bolder;
+}
+.title-quest-make h1{
+    width: 70%;
+}
+/*header*/
+/*main-and-quizz*/
+main{
+    height: 80vh;
+    width: 100%;
+}
+.area-quizz{
+    background-color: #00000091;
+    width: 70%;
+    padding: 2rem;
+}
+.question{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.answer{
+    border: solid 1px #555;
+    transition: 1s;
+}
+.answer:hover{
+    transition: 1s;
+    border: solid 1px #fd7e14;
+}
+.spnQtd{
+    color: #fff;
+}
+#quiz{
+    height: 200px;
+    height: 350px;
+    overflow: hidden;
+}
+.finish{
+    display: none;
+}
+.number-question{
+    background-color: #fd7e14;
+    height: 50px;
+    width: 50px;
+}
+.indice-quest{
+    width: 70%;
+}
+.question-indicators {
+    display: flex;
+    gap: 5px;
+}
+.index{
+    background-color: transparent;
+}
+.indicator {
+    border-color: #fd7e14 !important;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: .25rem;
+}
+.indicator.active {
+    border-color: #fd7e14 !important;
+    background-color: #fd7e14;
+}
+.indicator.correct {
+    background-color: #fd7e14; 
+}
+#btn-prev{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.answers-result{
+    background-color: #00000091;
+    border-color: #fd7d14b1 !important;
+    height: 50px;
+    width: 90%;
+}
+.answer-correct {
+    color: #28a745; 
+}
+
+.answer-incorrect {
+    color: #dc3545; 
+}
+.finish h2{
+    color:#fff;
+}
+
+.finish ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.finish li {
+    margin-bottom: 8px;
+}
+/*main-and-quizz*/
+/*media-query*/
+@media only screen and (max-width: 638px) {
+    .title-quest-make h1{
+        font-size: 1.5rem;
+        color:#fff;
+    }
+    .area-quizz {
+        width: 90%;
+    }
+    .number-question {
+        height: 40px;
+        width: 40px;
+    }
+    .answers-result,
+    .question{
+        font-size: 0.67rem;
+    }
+    .mt-custom {
+        margin-top: 0.5rem !important; /* Corresponde a mt-2 do Bootstrap */
+    }
+}
+/*media-query*/
